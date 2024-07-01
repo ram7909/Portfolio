@@ -103,7 +103,7 @@ section{
     .home{
         flex-direction: column;
         justify-content: center;
-        gap: 40px;
+        gap: 100px;
     }
     .home-content{
         width: 80vw;
