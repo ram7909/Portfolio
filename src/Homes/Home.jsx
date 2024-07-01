@@ -29,10 +29,10 @@ const Home = () => {
             <a href="https://github.com/ram7909"><i className="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/ram795/"><i className="fa-brands fa-linkedin-in"></i></a>
           </div>
-          <a href='/public/ram.pdf' className='btn'>Resume</a>
+          <a href='/ram.pdf' className='btn'>Resume</a>
         </div>
         <div className="home-img" data-aos="fade-left" data-aos-duration="1000">
-          <img src="/public/Profile3.jpg" alt="" />
+          <img src="/Profile3.jpg" alt="" />
         </div>
       </section>
     </>

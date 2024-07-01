@@ -5,7 +5,7 @@ const About = () => {
         <>
             <section className="about" id="about">
                 <div className="about-img" data-aos="fade-right" data-aos-duration="1000">
-                    <img src="/public/Profile4.png" alt="" />
+                    <img src="/Profile4.png" alt="" />
                 </div>
                 <div className="about-content" data-aos="fade-left" data-aos-duration="1000">
                     <h2 className="heading">ABOUT <span id='abt-me'>Me</span></h2>
