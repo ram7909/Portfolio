@@ -1,3 +1,9 @@
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .contact h2{
     margin-bottom: 3rem;
 }
@@ -39,4 +45,33 @@
 }
 .contact form .btn:hover{
     box-shadow: 0 0 1rem var(--main-color);
+}
+
+.contact-content{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.email i, .phone i{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+.email a, .phone a{
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+.cnt{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 2rem;
+}
+.phone,.email{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cnt .social-media{
+    
+    margin: 1rem 1.5rem 1rem 0rem;
 }

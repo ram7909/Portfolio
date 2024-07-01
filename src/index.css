@@ -9,15 +9,18 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: "Nunito", sans-serif;
-    /* font-family: "Poppins", sans-serif;
-    font-weight: 400; */
 }
 
 :root {
-    --bg-color: #191f36;
+    /* --bg-color: #191f36;
     --snd-bf-color: #262B40;
     --text-color: #fff;
-    --main-color: #59B2F4;
+    --main-color: #59B2F4; */
+
+    --bg-color: #222831;
+    --snd-bf-color: #31363F;
+    --text-color: #EEEEEE ;
+    --main-color:#59B2F4 ;
 }
 
 html {
@@ -132,6 +135,11 @@ section{
     }
     .study{
         gap: 70px;
+    }
+
+    .contact-content{
+        flex-direction: column;
+        gap: 0px;
     }
 }
 

@@ -7,6 +7,7 @@ const Navbar = () => {
 
   const handleSetActiveLink = (link) => {
     setActivelink('link')
+    setToggle(false)
   }
 
   const handleToggle = () => {
