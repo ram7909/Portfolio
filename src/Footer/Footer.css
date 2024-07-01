@@ -1,0 +1,28 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--snd-bf-color);
+}
+.footer-text{
+    font-size: 1.6rem;
+}
+.footer-icon-top{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background:var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-icon-top:hover{
+    box-shadow: 0 0 1rem var(--main-color);
+}
+.footer-icon-top a i{
+    padding: .8rem 1rem;
+    font-size: 2.4rem;
+    color: var(--snd-bf-color);
+}

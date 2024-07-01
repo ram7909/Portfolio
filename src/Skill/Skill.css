@@ -1,0 +1,65 @@
+.fa-html5{
+    color: #e44d25;
+}
+.fa-css3-alt{
+    color: #379ad6;
+}
+.fa-js{
+    color: #fbe01b;
+}
+.fa-bootstrap{
+    color:#8812fe;
+}
+.fa-react{
+    color: #00d1f7;
+}
+.fa-node-js{
+    color: #7db50b;
+}
+.fa-database{
+    color: #4dac3f;
+}
+
+#skill-s{
+    color: var(--main-color);
+}
+.skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.skl{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.skill h2{
+    margin-bottom: 3rem;
+}
+.skl .card{
+    background-color: var(--snd-bg-color);
+    padding: 3rem 2rem 0rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+    width: 200px;
+}
+.skl .card:hover{
+    border-color: var(--main-color);
+    border-radius: 20px;
+    transform: scale(1.05);
+}
+.skl .card i{
+    font-size: 7rem;
+}
+.skl .card h3{
+    font-size: 2rem;
+}
+.skl .card p{
+    font-size: 1.3rem;
+    margin: 1rem 0 1rem;
+    color: gray;
+}

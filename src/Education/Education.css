@@ -1,0 +1,25 @@
+.education{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.study{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+}
+.clg{
+    text-align: center;
+}
+.clg h1{
+    font-size: 2.5rem;
+}
+.clg .inst-name{
+    font-size: 1.5rem;
+}
+.clg .duration{
+    font-size: 1.2rem;
+    color: grey;
+}

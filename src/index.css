@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Nunito", sans-serif;
+    /* font-family: "Poppins", sans-serif;
+    font-weight: 400; */
+}
+
+:root {
+    --bg-color: #191f36;
+    --snd-bf-color: #262B40;
+    --text-color: #fff;
+    --main-color: #59B2F4;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.education{
+    padding: 2rem 0rem;
+}
+@media (max-width:1200px) {
+    html{
+        font-size: 55%;
+    }
+    .home-img img{
+        width: 35vw;
+        height: 35vw;
+    }
+}
+@media (max-width:991px) {
+    .header{
+        padding: 2rem 3%;
+    }
+    .home-img img{
+        height: 35vw;
+        width: 35vw;
+    }
+    .section{
+        padding: 2rem 3%;
+    }
+    .skill{
+        padding: 7rem;
+    }
+    .project{
+        padding-bottom: 7rem;
+    }
+    .contact{
+        min-height: auto;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width:768px){
+    #menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1% 3rem;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+        margin: 2rem 0 ;
+    }
+    .home{
+        flex-direction: column;
+    }
+    .home-content{
+        width: 80vw;
+        order: 2;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size:5rem;
+    }
+    .home-img img{
+        width: 50vw;
+        height: 50vw;
+        margin-top: 4rem;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about-content{
+        width: 80vw;
+    }
+    .about-img img{
+        margin-top: 4rem;
+    }
+    .skill h2{
+        margin-bottom: 3rem;
+    }
+    .project-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .study{
+        gap: 70px;
+    }
+}
+
+@media (max-width:617px){
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+    .home-img img{
+        height: 60vw;
+        width: 60vw;
+        margin-top: 3rem;
+    }
+    .home-content{
+        width: 80vw;
+    }
+    .about-img img{
+        height: 40vh;
+        margin-top: 0rem;
+    }
+    .about-content{
+        margin-top: -20px;
+        width: 80vw;
+    }
+    .heading{
+        font-size: 3.5rem;
+    }
+    .clg h1{
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .contact form .input-box input{
+        width: 100%;
+    }
+}
+
+@media (max-width:450px){
+    .home-content h1{
+        font-size: 3.5rem;
+    }
+    .home-content h3{
+        font-size: 2.5rem;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    .about-content h3{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .footer-text p{
+        font-size: 1.2rem ;
+    }
+    .education{
+        padding: 2rem 0rem;
+    }
+    .education .study{
+        gap :50px;
+    }
+    .skl{
+        gap: 25px;
+    }
+}
+
+@media (max-width:300px){
+    .home-content h1{
+        font-size: 3rem;
+    }
+    .home-img img{
+        width: 70vw;
+        height: 70vw;
+    }
+    .home-content h3{
+        font-size: 2rem;
+    }
+    .footer-icon-top{
+        display: none;
+    }
+}
