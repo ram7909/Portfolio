@@ -102,6 +102,8 @@ section{
     }
     .home{
         flex-direction: column;
+        justify-content: center;
+        gap: 40px;
     }
     .home-content{
         width: 80vw;
