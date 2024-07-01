@@ -18,9 +18,11 @@
     display: flex;
 }
 .project-box img{
+    height: 300px;
     width: 100%;
 }
 .project-box:hover img{
+    height: 300px;
     width: 100%;
     transition: .5s ease;
     opacity: 0.7;
@@ -46,10 +48,12 @@
 }
 .project-layer h4{
     font-size: 3rem;
+    font-weight: 500;
 }
 .project-layer p{
     font-size: 1.6rem;
     padding: .3rem 0 1rem;
+    font-weight:400;
 }
 .project-layer a{
     display: inline-flex;
