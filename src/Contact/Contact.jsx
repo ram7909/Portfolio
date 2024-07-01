@@ -1,6 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Contact.css'
 const Contact = () => {
+
+    const [name, setName] = useState("")
+    const [number, setNumber] = useState("")
+    const [email, setEmail] = useState("")
+    const [subject, setSubject] = useState("")
+    const [message, setMessage] = useState("")
+
+    const submithandler = (e) => {
+        e.preventDefault();
+        console.log(name + number + email + subject + message);
+        alert("Message Send Succesfully");
+        setName('')
+        setNumber('')
+        setEmail('')
+        setSubject('')
+        setMessage('')
+    }
+
     return (
         <>
             <section className="contact" id="contact" data-aos="zoom-in-up" data-aos-duration="1000">
@@ -20,17 +38,16 @@ const Contact = () => {
                             <a href="https://www.linkedin.com/in/ram795/"><i className="fa-brands fa-linkedin-in"></i></a>
                         </div>
                     </div>
-
-                    <form action="#">
+                    <form onSubmit={submithandler}>
                         <div className="input-box">
-                            <input type="text" placeholder='Full Name' />
-                            <input type="email" placeholder='Email Address' />
+                            <input type="text" placeholder='Full Name' value={name} onChange={(e) => setName(e.target.value)} />
+                            <input type="email" placeholder='Email Address' value={email} onChange={(e) => setEmail(e.target.value)} />
                         </div>
                         <div className="input-box">
-                            <input type="number" placeholder='Mobile Number' />
-                            <input type="text" placeholder='Email Subject' />
+                            <input type="number" placeholder='Mobile Number' value={number} onChange={(e) => setNumber(e.target.value)} />
+                            <input type="text" placeholder='Email Subject' value={subject} onChange={(e) => setSubject(e.target.value)} />
                         </div>
-                        <textarea name="" id="" cols="30" rows="5" placeholder="Your Message"></textarea>
+                        <textarea name="" id="" cols="30" rows="5" placeholder="Your Message" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
                         <input type="submit" value="Send" className='btn' />
                     </form>
                 </div>
