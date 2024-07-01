@@ -52,6 +52,7 @@ section{
 }
 @media (max-width:991px) {
     .header{
+        box-sizing: border-box;
         padding: 2rem 3%;
     }
     .home-img img{
@@ -184,6 +185,11 @@ section{
 }
 
 @media (max-width:450px){
+    .home-img img{
+        width: 70vw;
+        height: 70vw;
+        margin-top: 1rem;
+    }
     .home-content h1{
         font-size: 3.5rem;
     }
@@ -209,6 +215,9 @@ section{
     .skl{
         gap: 25px;
     }
+    .phone a, .email a{
+        font-size: 18px;
+    }
 }
 
 @media (max-width:300px){
@@ -225,6 +234,9 @@ section{
     .footer-icon-top{
         display: none;
     }
+    .phone a, .email a{
+        font-size: 18px;
+    }
 }
 
 @media (max-width:275px){
@@ -234,5 +246,8 @@ section{
     .home-img img{
         width: 80vw;
         height: 80vw;
+    }
+    .phone a, .email a{
+        font-size: 18px;
     }
 }
