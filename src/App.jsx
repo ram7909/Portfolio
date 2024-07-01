@@ -9,21 +9,27 @@ import Education from './Education/Education'
 import Project from './Projectss/Project'
 import Contact from './Contact/Contact'
 import Footer from './Footer/Footer'
+import Top from './Top/Top'
 const App = () => {
   useEffect(() => {
-    Aos.init(); 
+    Aos.init();
   }, [])
-  
+
   return (
     <>
       <Navbar />
-      <Home />
-      <About />
-      <Skill />
-      <Education />
-      <Project />
-      <Contact />
-      <Footer />
+      <div className="main-page">
+        <Home />
+        <About />
+        <Skill />
+        <Education />
+        <Project />
+        <Contact />
+        <Footer />
+        <div className="t">
+          <Top />
+        </div>
+      </div>
     </>
   )
 }

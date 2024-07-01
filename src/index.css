@@ -41,6 +41,21 @@ section{
 .education{
     padding: 2rem 0rem;
 }
+.main-page{
+    position: relative;
+}
+.t{
+    position: fixed;
+    bottom: 30px ;
+    right: 50px;
+    z-index: 10;
+    animation: TopIcon 1s infinite;
+}
+@keyframes TopIcon {
+    0%{transform: translateY(0);}
+    50%{transform: translateY(-1rem);}
+    0%{transform: translateY(0);}
+}
 @media (max-width:1200px) {
     html{
         font-size: 55%;

@@ -20,12 +20,6 @@ const Navbar = () => {
       <i className={`fa ${toggle ? 'fa-xmark' : 'fa-bars'}`} id='menu-icon' onClick={handleToggle}
       ></i>
       <nav className={`navbar ${toggle ? 'active' : ''}`}>
-        {/* <a href="#home" className="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#skill">Skill</a>
-        <a href="#project">Project</a>
-        <a href="#contact">Contact</a> */}
-
         <a
           href="#home"
           className={activeLink === '#home' ? 'active' : ''}
