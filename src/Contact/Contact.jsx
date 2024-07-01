@@ -10,7 +10,7 @@ const Contact = () => {
 
     const submithandler = (e) => {
         e.preventDefault();
-        console.log(name + number + email + subject + message); required 
+        console.log(name + number + email + subject + message);
         alert("Message Send Succesfully");
         setName('')
         setNumber('')
@@ -40,12 +40,12 @@ const Contact = () => {
                     </div>
                     <form onSubmit={submithandler}>
                         <div className="input-box">
-                            <input type="text" placeholder='Full Name' value={name} onChange={(e) => setName(e.target.value)}  required />
-                            <input type="email" placeholder='Email Address' value={email} onChange={(e) => setEmail(e.target.value)}  required />
+                            <input type="text" placeholder='Full Name' value={name} onChange={(e) => setName(e.target.value)} />
+                            <input type="email" placeholder='Email Address' value={email} onChange={(e) => setEmail(e.target.value)} />
                         </div>
                         <div className="input-box">
-                            <input type="number" placeholder='Mobile Number' value={number} onChange={(e) => setNumber(e.target.value)}  required />
-                            <input type="text" placeholder='Email Subject' value={subject} onChange={(e) => setSubject(e.target.value)}  required />
+                            <input type="number" placeholder='Mobile Number' value={number} onChange={(e) => setNumber(e.target.value)} />
+                            <input type="text" placeholder='Email Subject' value={subject} onChange={(e) => setSubject(e.target.value)} />
                         </div>
                         <textarea name="" id="" cols="30" rows="5" placeholder="Your Message" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
                         <input type="submit" value="Send" className='btn' />
